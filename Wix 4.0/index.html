@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIX</title>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="tools t1">
+        <div class="props">
+            <h2 class="pt">Properties</h2>
+            <div class="prop">
+                <span class="name">Padding: </span>
+                <input type="text" class="pv">
+            </div>
+            <div class="prop">
+                <span class="name">Color: </span>
+                <input type="text" class="pv">
+            </div>
+            <div class="prop">
+                <span class="name">Left: </span>
+                <input type="text" class="pv">
+            </div>
+            <div class="prop">
+                <span class="name">Top: </span>
+                <input type="text" class="pv">
+            </div>
+            <div class="prop">
+                <span class="name">Fontsize: </span>
+                <input type="text" class="pv">
+            </div>
+            <div class="prop">
+                <span class="name">Background: </span>
+                <input type="text" class="pv">
+            </div>
+        </div>
+        <div class="cp">
+            <h2 class="ctt">Color Picker</h2>
+            <input type="color" class="cpcp">
+            <span class="colorp">#000000</span>
+            <script>const color=document.querySelector(".colorp");document.querySelector(".cpcp").onchange = ()=>{color.innerText=document.querySelector(".cpcp").value}</script>
+        </div>
+        <div class="scal">
+            <h2 class="pt">Scale</h2>
+            <div class="scale"></div>
+        </div>
+    </div>
+    <div id="app"><style>*,*::before,*::after{margin:0px 0px 0px 0px;padding:0;box-sizing:border-box;border:0;font-family:"Montserrat",sans-serif;outline:0;}#app{min-height: 100vh;width: 100vw;display: flex;justify-content: center;align-items: center;}</style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></div>
+    <div class="tools t2">
+        <h2 class="pt">Elements</h2>
+        <div class="elements">
+            <div class="ec">
+                <h1 class="h1 e">Heading</h1>
+            </div>
+            <div class="ec">
+                <h2 class="h2 e">Heading</h2>
+            </div>
+            <div class="ec">
+                <h3 class="h3 e">Heading</h3>
+            </div>
+            <div class="ec">
+                <h4 class="h4 e">Heading</h4>
+            </div>
+            <div class="ec">
+                <p class="p e">Text</p>
+            </div>
+        </div>
+        <h2 class="pt">Color Scheme</h2>
+        <div class="ex">
+            <div class="box boxe"></div>
+            <div class="box2 boxe"></div>
+            <div class="box3 boxe"></div>
+            <div class="box4 boxe"></div>
+        </div>
+        <div class="cs">
+            <div class="color">
+                <span class="cn">Primary: </span><input type="text" class="c">
+            </div>
+            <div class="color">
+                <span class="cn">Secondary: </span><input type="text" class="c">
+            </div>
+            <div class="color">
+                <span class="cn">Background: </span><input type="text" class="c">
+            </div>
+            <div class="color">
+                <span class="cn">Pop: </span><input type="text" class="c">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
